@@ -1,1 +1,38 @@
+let STAFFNAM= ["MOIZ","HADI","AHMED","ALI"]
+let STAFFPHON = [9981,9999,1234,6264]
+let OFFICE = ["KE","KR","KY","KS"]
+
+
+// No of staff members details
+console.log("staffnames are")
+function DETAILS(STAFFNAME ,STAFFPHONE) {
+for(let i=0; i<STAFFNAM.length;i++){
+    
+    console.log(STAFFNAM[i])
+}
+console.log("staff phone numbers are")
+ for(let i=0; i<STAFFPHON.length;i++){
+    
+    console.log(STAFFPHON[i])
+}
+} 
+DETAILS(STAFFNAM ,STAFFPHON);
+//LOCATAION OF MEMBERS
+console.log("staff location is ")
+function LOC(area){
+    for(i=0;i<OFFICE.length;i++){
+        console.log(OFFICE[i])
+    }
+}
+LOC(OFFICE);
+
+function upgrade(STAFFNAME) {
+    let userName = prompt("What is your name?");
+    userName = [userName]; // Convert string to array
+    STAFFNAM.push(userName); // Add userName array to STAFFNAM array
+    console.log(userName);
+  }
+  
+  upgrade(STAFFNAM);
+
 
